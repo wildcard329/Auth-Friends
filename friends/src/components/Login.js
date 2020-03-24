@@ -16,8 +16,9 @@ export const Login = props => {
         .post('/api/login', credentials)
         .then(res => {
             console.log(res)
-            localStorage.setItem('token', JSON.stringify(res.data.token));
-            // props.history.push('/protected');
+            localStorage.setItem('token', res.data.payload);
+            console.log(res.data)
+            props.history.push('/protected');
         })
         .catch(err => console.log(err.response));
     };
