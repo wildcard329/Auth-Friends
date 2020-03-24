@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.friends {
+  background-color: lime;
+  color: blue;
+  border-radius: 5%;
+  border-right: 1px solid green;
+  border-bottom: 1px solid green;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

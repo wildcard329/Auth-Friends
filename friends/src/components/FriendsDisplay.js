@@ -20,9 +20,10 @@ function FriendsDisplay() {
             })
     }
     return(
-        <div>
+        <div className="display">
             {friends.map(friend => (
-                <div key={friend.id}>
+                <div className="friends" 
+                key={friend.id}>
                     <p>{friend.name}</p>
                     <p>{friend.age}</p>
                     <p>{friend.email}</p>
